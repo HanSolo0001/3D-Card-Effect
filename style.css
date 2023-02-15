@@ -98,3 +98,9 @@ pre::after {
     -ms-transform: translateZ(-50px);
     -o-transform: translateZ(-50px);
 }
+
+.pre-container {
+    position: relative;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
