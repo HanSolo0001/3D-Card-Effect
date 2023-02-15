@@ -19,3 +19,30 @@ body {
     display: grid;
     place-items: center;
 }
+
+pre {
+    --selector: var(--pink);
+    --property: var(--teal);
+    --punctuation: var(--white);
+    font-size: 3rem;
+    font-weight: bold;
+    background: hsl(222, 45%, 7%);
+    padding: 2rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.selector {
+    color: var(--selector);
+}
+
+.property {
+    color: var(--property);
+}
+
+.punctuation {
+    color: var(--punctuation);
+}
