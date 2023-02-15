@@ -4,6 +4,12 @@
     --white: hsl(334, 7%, 95%);
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     background: hsl(224, 32%, 12%);
     background-image: conic-gradient( from 0deg at 50% 50%, blue, purple, purple, blue);
