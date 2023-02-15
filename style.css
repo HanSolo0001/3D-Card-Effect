@@ -33,6 +33,7 @@ pre {
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
+    position: relative;
     transform: perspective(5000px) rotateY(20deg) rotateX(20deg);
     -webkit-transform: perspective(5000px) rotateY(20deg) rotateX(20deg);
     -moz-transform: perspective(5000px) rotateY(20deg) rotateX(20deg);
@@ -58,4 +59,23 @@ pre {
 
 pre>* {
     text-shadow: 0 0 0.3em currentColor;
+}
+
+pre::before,
+pre::after {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+}
+
+
+/* gradient */
+
+pre::after {
+    inset: 0rem;
+    background: linear-gradient(-45deg, red, blue);
 }
