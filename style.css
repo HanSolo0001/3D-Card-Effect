@@ -33,6 +33,11 @@ pre {
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
+    transform: perspective(5000px) rotateY(20deg) rotateX(20deg);
+    -webkit-transform: perspective(5000px) rotateY(20deg) rotateX(20deg);
+    -moz-transform: perspective(5000px) rotateY(20deg) rotateX(20deg);
+    -ms-transform: perspective(5000px) rotateY(20deg) rotateX(20deg);
+    -o-transform: perspective(5000px) rotateY(20deg) rotateX(20deg);
 }
 
 .selector {
@@ -45,4 +50,12 @@ pre {
 
 .punctuation {
     color: var(--punctuation);
+}
+
+.property+.punctuation {
+    color: var(--property);
+}
+
+pre>* {
+    text-shadow: 0 0 0.3em currentColor;
 }
